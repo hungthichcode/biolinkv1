@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: JetBrains Mono;
+    /* background-color: #f0f0f0; */
+    background-image: url(https://i.postimg.cc/j51sKLJ0/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+      /* Responsive Styles
+      @media (max-width: 768px) { 
+        .bio-container {
+            padding: 12px;
+        }
+        .bio-name {
+            font-size: 20px;
+        }
+        .bio-description {
+            font-size: 14px;
+        }
+        .links {
+            flex-direction: column;
+            gap: 8px;
+        }
+        .link {
+            font-size: 14px;
+            width: -webkit-fill-available;
+        }
+    }
+    
+    @media (max-width: 480px) { Mobile view
+        .bio-name {
+            font-size: 18px;
+        }
+        .bio-description {
+            font-size: 12px;
+        }
+        .links {
+            flex-direction: column;
+            align-items: center;
+        }
+        .link {
+            font-size: 12px;
+            width: -webkit-fill-available;
+        }
+        .link svg {
+            width: 20px;
+            height: 20px;
+        }
+    } */
+
+.bio-container {
+    max-width: 400px;
+    padding: 20px;
+    /* background-color: #ffffff; */
+    background-image: url("https://i.postimg.cc/154cfzR1/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+.bio-name {
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-shadow: 0 0 5px #727309;
+    background-image: url('https://phanmem.me/wp-content/uploads/2022/10/bg1.webp'), linear-gradient(90deg, red 0, #29ff00 100%, #fff);
+    animation: 5s linear infinite godlyanim;
+    color: #ff512f;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+@keyframes godlyanim {
+    0% {
+    filter: hue-rotate(-360deg);
+    }
+    100% {
+    filter: hue-rotate(360deg);
+    }
+}
+
+.bio-description {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.link:hover {
+    background-color: #0056b3;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+    border-right: 2px solid #fff;
+    padding-right: 15px;
+}
+
+.def-text .hover-text {
+    transition: opacity 0.3s ease;
+} 
+
+.def-text {
+display: inline;
+}
+
+.hover-text {
+display: none;
+}
+
+.link:hover .def-text {
+display: none;
+transition: all 1000ms;
+}
+
+.link:hover .hover-text {
+display: inline;
+transition: all 1000ms;
+}
+
+.copyright {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.License {
+    font-size: 12px;
+    padding-top: 20px;
+    color: #ff512f;
+}
